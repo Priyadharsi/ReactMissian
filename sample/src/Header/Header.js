@@ -14,11 +14,11 @@ import InputLabel from '@mui/material/InputLabel';
 
 
 const Header = () => {
-  const details=useState(localStorage.getItem(productdetails));
-  const [data,setData]=useState(details);
+  // const details=useState(productdetails);
+  // const [data,setData]=useState(details);
 
-    const lowtohigh=()=>{const newdata=[...data].sort((a,b)=>a.Price-b.Price);setData(newdata)}
-    const hightolow=()=>{const newdata1=[...data].sort((a,b)=>a.Price-b.Price);setData(newdata1.reverse())}
+    // const lowtohigh=()=>{const newdata=[...data].sort((a,b)=>a.Price-b.Price);setData(newdata)}
+    // const hightolow=()=>{const newdata1=[...data].sort((a,b)=>a.Price-b.Price);setData(newdata1.reverse())}
     // const Filter=()=>{const newdata2=furnituretype.filter((el,i)=>el. === true);setFurnituretype(newdata2)}
   //   const newobj3=()=>{const newdata3=[...name].sort((a,b)=>{
   //        if (a.name < b.name){
@@ -44,9 +44,9 @@ const Header = () => {
   //    })
   //    setName(newdata4);
   //  };
-  const handleChange = (event) => {
-    setData(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setData(event.target.value);
+  // };
   return (
     <div className='Header-section'>
       <div className='container'>
@@ -62,26 +62,27 @@ const Header = () => {
           </div>
           <div className='startbtn'>
              <a href='#'><SearchIcon /></a>
-             {data.map(
-            (n,i)=><div  key={i}>{n.data} {n.price}</div>)}
+             <a href="#"><SortIcon /></a>
+             {/* {data.map(
+            (n,i)=><div  key={i}>{n.data} {n.price}</div>)} */}
 
-             <FormControl sx={{ m: 1, minWidth: 120 }}>
+             {/* <FormControl sx={{ m: 1, minWidth: 120 }}>
                   <InputLabel id="demo-simple-select-helper-label">SortBy</InputLabel>
                   <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={data}
-                    label="data"
+                    // value={data}
+                    // label="data"
                     onChange={handleChange}
                   >
                     <MenuItem value="">
                       <em>None</em>
                     </MenuItem>
-                    <MenuItem onclick =  {lowtohigh} value={lowtohigh}>Low to High</MenuItem>
-                    <MenuItem onclick =  {hightolow} value={hightolow}>High to Low</MenuItem>
+                    <MenuItem >Low to High</MenuItem>
+                    <MenuItem >High to Low</MenuItem>
                     {/* <MenuItem value={Filter}>Filter</MenuItem> */}
-                  </Select>
-              </FormControl>
+                  {/* </Select>
+              </FormControl> */} 
              
           </div>
         </div>
