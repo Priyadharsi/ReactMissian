@@ -1,0 +1,39 @@
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+ }
+.insta-section{
+    background-image:url(../image/h1_section-banner-2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 140px 0 70px;
+    margin-top:78px;
+}
+.insta-content{
+    text-align: center;
+}
+.insta-content h3{
+    font-size:44px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+.insta-content h5{
+    color:#000;
+    font-size:17px;
+    /* font-family:sans-serrif; */
+    /* font-weight:400; */
+}
+.insta-btn a{
+    text-decoration: none;
+    color:black;
+}
+.insta-btn{
+    background: transparent;
+    font-size: 18px;
+    padding: 0;
+    font-family: Gilroy-SemiBold;
+    border: none;
+    border-bottom: 2px solid;
+}

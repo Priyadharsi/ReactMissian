@@ -1,0 +1,45 @@
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+ }
+.order-section{
+    background-image:url(../image/h1_section-banner.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* background-position:top;
+    background-attachment:fixed; */
+    padding: 184px 0 113px;
+    /* margin-top:40px; */
+}
+.order-content{
+    text-align: center;
+}
+.order-content h6{
+    font-size:22px;
+    font-weight:500;
+    line-height:13px;
+}
+.order-content h3{
+    font-size:50px;
+    font-weight:600;
+    /* line-height: 25px; */
+}
+.order-btn{
+    border:2px solid black;
+    background-color:transparent;
+    border-radius:6px;
+    padding:14px 30px;
+    margin-top:20px;
+}
+.order-btn:hover{
+     color:#cd8f5c;
+     border-color:#cd8f5c;
+}
+.order-btn a{
+    text-decoration:none;
+    color:black;
+    font-size:16px;
+    font-weight:400;
+}

@@ -1,0 +1,40 @@
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+ }
+.banner-section{
+    background-color:rgb(252,246,242);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-position:top;
+    background-attachment:fixed;
+    padding: 170px 0 74px;
+    margin-bottom: 50px;
+}
+.bannerbg{
+    text-align: center;
+}
+.bannercontent{
+    text-align: center;
+}
+.bannercontent img {
+    width:76%;
+    height:auto;
+}
+.bannercontent h2{
+    text-align:center;
+    font-size: 58px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.bannercontent p{
+    text-align:center;
+    font-size:18px;
+    color: black;
+    font-weight:500;
+    padding-bottom: 14px;
+
+}
